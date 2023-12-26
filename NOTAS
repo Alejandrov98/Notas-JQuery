@@ -1,0 +1,417 @@
+<!-- <h1>Curso JQuery</h1>
+    
+    <p>Este es un parrafo para nuestra pagina.
+        <p id="p1">Este es un parrafo dentro de otro parrafo!</p>
+        <p class="c1">Este es un segundo parrafo dentro de otro parrafo!!!</p>
+    </p> -->
+    <!-- <p id="parrafo1">Hola este es un parrafo para nuestra pagina</p> -->
+    <!-- <p class="parrafo2">Hola este es un segundo parrafo</p> -->
+
+    <!-- <ul>
+        <li>Perro</li>
+        <li>Gato</li>
+        <li>Perico</li>
+    </ul>
+
+    <ul>
+        <li>Auto</li>
+        <li>Moto</li>
+        <li>Barco</li>
+    </ul> -->
+
+    <!-- <input type="button" name="Ocultar" value="Un Clic" id="btnOne">
+    <input type="button" name="Mostrar" value="Dos Clics" id="btnTwo">
+    <input type="button" name="Enter" value="Enter" id="btnEnter">
+    <input type="button" name="Leave" value="Dejar" id="btnDejar">
+    <input type="button" name="mDown" value="Mouse Down" id="btnDown">
+    <input type="button" name="mUp" value="Mouse Up" id="btnUP">
+    <input type="button" name="hover" value="Hover" id="btnHover">
+    <input type="button" name="focus" value="Focus" id="btnFocus">
+    <input type="button" name="blur" value="Blur" id="btnBlur"> -->
+    <!-- <input type="button" name="on" value="On" id="btnOn"> -->
+
+    <!-- <input type="button" name="Button" value="FadeIn" id="btnFadeIn" />
+    <input type="button" name="Button" value="FadeOut" id="btnFadeOut" />
+    <input type="button" name="Button" value="Fade Toggle" id="btnToggle" />
+    <input type="button" name="Button" value="Fade To" id="btnFadeTo" />   
+    <div id="cuadrado1" style=></div>
+    <div id="cuadrado2" style=></div>
+    <div id="cuadrado3" style=></div>
+  -->
+
+    <!-- <div id="btn" style=>Mostrar/Ocultar el Panel</div>
+    <div id="panel" style=>Curso JQuery</div> -->
+
+    <button id="btn">Animar</button>
+    <!-- <button id="stop1">Stop</button>
+    <button id="stop2">Stop 2</button>
+    <button id="stop3">Stop 3</button> -->
+
+    
+    <div id="panel">Hola Soy un Panel </div>
+
+    <!-- <div id="cuadrado2" style=>Cuadrado 2</div>
+    <div id="cuadrado3" style=>Cuadrado 3</div> -->
+
+
+
+    
+    
+    <!-- envento Fade -->
+
+    //  <!-- Aqui ingresamos los codigos de la libreria -->
+      //Esta hecho en seleccionar elementos y realizar acciones, estructura basica 3 partes: simbolo de $, adentro de parentesis lo que seleccionamos y despues loq ue queremosq ue haga u accion.
+      //$(selector).action()
+
+      //document hace referencia al documento donde estamos parados .ready revisa que el documento este todo cargado
+      /*  $(document).ready(function () {
+            console.log("Hola desde Jquery");  // al ser una libreria js se puede usar tranquilamente codigo js
+            alert("Hola desde JQuery");
+        }); */
+
+        // $("h1").hide(); // hacemos referencia a la etiqueta p, puede ser h1 por ejemplo tranquilamente, para ooptimizar esto debemos prepararlo previamente y hacerlo en el evento del documento listok, codigos que esten despues no van a aplicarse esta accion por eso es importante prepararlo
+        // $("#parrafo1").hide(); // el # hace referencia a los id de las etiquietas
+        // $(".parrafo2").hide(); // el , hace referencia a las class de las etiquietas
+        // $("*").hide(); // * esto hace referencia a todos los elementos html
+        // $("p#p1").hide() // actuamos dentro de una etiqeu p otra etiqueta p con el id p1
+        // $("p.c1").hide() // actuamos dentro de una etiqeu p otra etiqueta p con la class c1
+        // $("ul li:first").hide(); // dentro de ul vamos a li y con : accedemos al primer elemento y aplicamos el metodo
+        // $("ul li:first-child").hide(); // en este caso oculto el primer elmento de cada ul li, s epeude pasar argumentos como speed, callback para manejar el uso de hide
+        // $("ul li:first-child").hide(5000); // con esto se maneja en mili segundos como se oculta
+        //enventos de mouse: click, dbclick (doble click), mouseenter (cuando el mouse entra algun lado), mouseleave (cuando se va el mouse),
+        //eventos de teclado: keypress (presiono) keydown (mantengo presionado) keyup (dejo de presionar)
+        //enventos de form: submit, change (cambios), focus (enfocar ej: errores), blur (perder foco)
+        // enventos de documentos: load (cargar), resize, scroll, unload (sacar de la pagina)
+        // $("#btnOne").click(function(){ // podemos identificar segun el id el selector y actuaer en consecuencia
+          //     $("h1").hide(1500);         // en la etiqueta que aqui coloquemos
+          // });
+          // $("#btnTwo").dblclick(function(){
+            //     $("h1").show(1500);
+            // });
+            // $("#btnEnter").mouseenter(function(){
+              //     $("h1").hide(1500);
+              // });
+              // $("#btnDejar").mouseleave(function(){
+                //     $("h1").show(1500);
+                // });
+                // $("#btnDown").mousedown(function(){ //este metodo hace que cualquier tecla del mouse activa la funcion
+                  //     $("h1").hide(1500);
+                  // });
+                  // $("#btnUP").mouseup(function(){ //este metodo hace que cualquier tecla del mouse activa la funcion  mientras estemos dentro
+                    //     $("h1").show(1500);
+                    // });
+                    // $("#btnHover").hover(function(){ //este metodo combina enter y leave solo hay que separar mediante una coma , la funcion para indicar qeu hacer
+                      //     $("h1").hide(1500);
+                      // },
+                      // function(){
+                        //   $("h1").show(1500);
+                        // });
+                        // $("#btnFocus").focus(function(){ //este metodo hace que el foco activa la funcion
+                          //     $("h1").hide(1500);
+                          // });
+                          // $("#btnBlur").blur(function(){ //este metodo hace que perder el foco activa la funcion
+                            //     $("h1").show(1500);
+                            // });
+                            // $("#btnOn").on("click",function(){ //este metodo permite ingresar mas metodos permite poner mas de un parametro, primer parametro es el evento
+                              //     alert("Pulsaste el boton ON");
+                              //     $("h1").show(1500);
+                              // });
+                              // $("#btnOn").on({
+                                //   mouseenter:function(){ // con la llave indicamos que sigue en otra accion
+                                  //     $("h1").hide(1500);
+                                  //   },
+                                  //   mouseleave: function(){
+        //     $("h1").show(1500);
+        //   },
+        //   click: function(){
+          //     alert("Hola acabas de dar click en el boton ON")
+          //   }
+          // });
+          
+          //Las variantes de (Aparecer) fade: fadein, faeout, fadetoggle, fadeto
+          
+          /*  $("#btnFadeIn").click(function(){
+            $("#cuadrado1").fadeIn(3000); // se muestra el cuadrado , la diferencia con show es que shor lo saca de punta a punta y fade in le da un estilo de aparecimiento
+          });
+          $("#btnFadeOut").click(function(){
+            $("#cuadrado1").fadeOut(3000); // se quita el cuadrado 1
+          });
+          $("#btnToggle").click(function(){
+            $("#cuadrado2").fadeToggle(3000); // incluye facein y fadeOut
+        });
+        $("#btnFadeTo").click(function(){
+          $("#cuadrado3").fadeTo(3000, 1); // la sintaxis es $(selector).fadeTo(speed,opacity,callback)
+        }); */
+        
+        /*Efecto Slide tiene 3 variantes: slidedown, slideup, sidle toggle 
+        
+        $("#btn").click(function(){
+          $("#panel").slideDown(); //desliza de arriba hacia abajo parametors: velocidad y callback
+        });
+        $("#btn").click(function(){
+          $("#panel").slideUp(3000); // se oculta deslizandosehabia arriba
+        });
+        $("#btn").click(function(){
+          $("#panel").slideToggle(); //mezcla de los 2 anteriores
+        });
+        */
+       
+       /* EFECTO ANIMATE (animaciones personalizadas)
+       $(selector).animate({parametross}, speed, callback (llamar a una funcion)) los parametros definen la spropiedades css que se van animar
+       puedo tirar las sentencias una debajo de otra indicar el orden de como se manipulan ej:  $("#cuadrado1").animate({width:'200px'});
+       $("#cuadrado1").animate({height:'150px'});
+       $("#cuadrado1").animate({width:'50px'});
+       $("#cuadrado1").animate({height:'500px'});
+       
+       */
+      
+      /*
+  $("#btn").click(function(){ // podemos optimizar a traves de variables
+    
+    var cuad1 = $("div") // variable selector
+    
+    cuad1.animate({width:'200px'}); // funciona igual que los otros , podmeos acortarlo aun mas en vez de usar id podemos igualarlo a etiquetas por ej:  div y de ahi manipular todos juntos  
+    cuad1.animate({height:'200px'});
+    cuad1.animate({width:'100px'});
+    cuad1.animate({height:'100px'});
+    
+    // $("#cuadrado2").animate({width:'200px'});
+    // $("#cuadrado2").animate({height:'200px'});
+    // $("#cuadrado2").animate({width:'100px'});
+    // $("#cuadrado2").animate({height:'100px'});
+    
+    // $("#cuadrado3").animate({width:'200px'});
+    // $("#cuadrado3").animate({height:'150px'});
+    // $("#cuadrado3").animate({width:'50px'});
+    // $("#cuadrado3").animate({height:'500px'});
+  });
+  var div = $("div");
+  div.animate({width: 'toggle'}, 1000);
+  */
+ //  $("#btn").click(function(){
+   //   $("#panel").slideToggle(2000);
+   //   $("#panel").animate({fontSize: '3em'}, 2000);
+   //   $("#panel").animate({fontSize: '0.5em'}, 2000);
+   
+   
+   // });     
+   
+   // $("#stop1").click(function(){
+     //   $("#panel").stop(); //primer parametro todas las animaciones, y el otro al final de las animacionesz para la animacion del momento pero sigue con las otras
+     // });
+     // $("#stop2").click(function(){
+       //   $("#panel").stop(true); // para todas
+       // });
+       // $("#stop3").click(function(){
+         //   $("#panel").stop(true, true); //va directo al final 
+         // });
+         //COMO USAR LA CALLBACK SE USA COMO SEGUNDO PARA METRO SI LO MUESTRO COMO OTRA LINEA PUEDE CAUSAR UN COMPORTAMIENTO EN LA ANIMACION QUE NO ES EL BUSCADO 
+         // $("#panel").hide(1500);
+         // $("#panel").show(1500, function(){ 
+           //   alert("Hola") //es es la forma para que no se pise el alert con la primer animacion
+           // });
+           // var prop = $("#panel").css({"background-color": "blue", "color":"black"}); 
+           //SI USO ALERT(VARIABLE) me permite usar propiedades css devolvio pro ej: rgb(255, 0, 0)
+           
+           // $("#panel").css({"background-color": "blue", "color":"black"}); 
+           // $("#panel").slideToggle(3000); Hay otra forma mas corta
+           
+           // $("#btn").click(function(){
+             //   $("#panel").css({"background-color": "blue", "color":"black"})
+             //   .slideUp(3000)
+             //   .slideDown(3000)
+             //   .animate({width: '300px', heiht: '300px'},3000) 
+             // });
+
+             //para cambiar un valor css("propertyName, "value") pppara cambiar mas de uno ({"propertyName" :"value", ...})
+
+             <!-- para indicar la ruta del script y separar los codigos  
+  <script src="directorio/nombredel archivo.js"> </script>
+-->
+
+<!-- JQuery puede manipular el DOM con scripts y manipular elementos como atributos,
+  Get obetener datos
+text obtener texxto
+html conteindos y etiquetas del codigos
+funcion val (seteo y obtencion de datos) -->
+
+<p id="par">Esto es un texto con <b>Negritas</b> en un parrafo</p>
+    Campo: <input type="text" name="Nombre" id="testVal" value="Ferrari">
+
+    <button id="btnText">Mostrar Texto</button>
+    <button id="btnHTML">Mostrar HTML</button>
+    <button id="btnVal">Mostrar Valor</button>
+    
+
+    <button id="btnSetText">SET Texto</button>
+    <button id="btnSetHTML">SET HTML</button>
+    <button id="btnSetVal">SET Val</button>
+
+
+
+
+$("#btnText").click(function () {
+    alert("Texto: " + $("#par").text()); // Muestra el elemento Esto se puede tomar como Get ya que obtenemos informacion
+  });
+
+  $("#btnHTML").click(function () {
+    alert("HTML: " + $("#par").html()); //muestra el codigo
+  });
+
+  $("#btnSetText").click(function () {
+     $("#par").text("Esto es un Texto Cualquiera!"); // Modificamos el Dom cambia todo el texto por este
+  });
+
+  $("#btnSetHTML").click(function () {
+    $("#par").html("<b>Esto es un texto en negritas</b>") // Modificamos el Dom cambia todo el texto por este y con el estilo en negrita
+  });
+
+  $("#btnVal").click(function () {
+    alert("Valor: " +$("#testVal").val())
+  });
+
+  $("#btnSetVal").click(function () {
+    $("#testVal").val("Mercedes!!")
+   
+  });
+
+  
+  <p>Este es un parrafo</p>
+    <p>Este es otro parrafo</p>
+
+    <p id="multi">Este parrafo es OTRA PRUEBA</p>
+
+    <p id="afterbefore">Este parra es para after & before</p>
+
+    <ol>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+
+
+    </ol>
+
+    <button id="btn1">Append</button>
+    <button id="btn2">Append OL</button>
+
+    <button id="btn3">Prepend</button>
+    <button id="btn4">Prepend OL</button>
+
+    <button id="btn5">Multi!</button>
+    <button id="btn6">After y Before</button>
+
+
+    //apend() inserta contenido al final de lso elmentos seleccionados
+ $("#btn1").click(function(){
+    $("p").append("<b> Texto extra con Append </b>")
+ })
+
+ $("#btn2").click(function(){
+    $("ol").append("<li> Elemento Extra </li>")
+ })
+
+ //prepend()
+ $("#btn3").click(function(){
+    $("p").prepend("<b> Texto Prepend </b>") //Agrega al pincipio
+ })
+
+ $("#btn4").click(function(){
+    $("ol").prepend("<li> Elemento Extra con preprend </li>")
+ })
+
+ var txt1 ="<b>Alejandro </b>"
+ var txt2 ="<b>Luis </b>"
+ var txt3 ="<b>Agustin </b>"
+
+ $("#btn5").click(function(){
+    $("#multi").append(txt1, txt2, txt3)
+ })
+
+ $("#btn6").click(function(){
+    $("#afterbefore").after(" Hola soy After ");
+    $("#afterbefore").before(" Hola soy Before "); //la difeerencia es que apppende y prepend mete el elemento dentro de la etiqeuta y after y before por fuera
+
+ })
+
+ // metodo remove
+ $("#btnremove").click(function(){
+    $("#cuadro").remove() //Lo elimina, no lo oculta
+ });
+ //metodo empty
+ $("#btnEmpty").click(function(){
+    $("#cuadro").empty() //Lo Vacia, la diferencia, como dice la palabra vacia lo que esta en la etiqueta adentro pero se conserva por ejeplo el estilo y demas en cambio remove elimina la etiqueta con el contenido
+ });
+
+ <div id="cuadro">
+      <p id="p1">Parrafo de Nombre</p>
+      <p id="p2">Parrafo de Apellido</p>
+      <p id="p3">Parrafo de Datos</p>
+    </div>
+
+      <button id="btnremove">Remove!</button>
+      <button id="btnEmpty">Empty</button>
+
+      // manipulacion de css a traves de JQuery
+
+//addclass
+$('#btnAdd').click(function(){ //agrega el class y el valor a la etiqeuta 
+    $('h1, h2').addClass('importante')
+    $('p').addClass('azul')
+})
+
+$('#btnRemove').click(function(){ //quita el estilo a la etiqueta
+    $('h1, h2').removeClass('importante')
+    $('p').removeClass('azul')
+})
+
+//toggleClass() 
+$('#btnToggle').click(function(){ //quita el estilo a la etiqueta
+    $('h1, h2').toggleClass('importante')
+    $('p').toggleClass('azul')
+})
+
+//CSS  obtenemos datos y pedimos que devuelva
+//la difewrencia de animate que no hay ninguna animacion elc amibo es directo
+$('#btnCss').click(function(){ //quita el estilo a la etiqueta
+    var datos = $("p").css("color");
+    alert(datos);
+})
+
+// manipulacion de css a traves de JQuery
+
+//addclass
+$('#btnAdd').click(function(){ //agrega el class y el valor a la etiqeuta 
+    $('h1, h2').addClass('importante')
+    $('p').addClass('azul')
+})
+
+$('#btnRemove').click(function(){ //quita el estilo a la etiqueta
+    $('h1, h2').removeClass('importante')
+    $('p').removeClass('azul')
+})
+
+//toggleClass() 
+$('#btnToggle').click(function(){ //quita el estilo a la etiqueta
+    $('h1, h2').toggleClass('importante')
+    $('p').toggleClass('azul')
+})
+
+//CSS  obtenemos datos y pedimos que devuelva
+//la difewrencia de animate que no hay ninguna animacion elc amibo es directo
+$('#btnCss').click(function(){ //quita el estilo a la etiqueta
+    var datos = $("p").css("color");
+    alert(datos);
+})
+
+    
+<h1>Importante</h1>
+    <h2>Aviso</h2>
+    <p>Este Parrafo es para avisar algo</p>
+
+        <button id="btnAdd">Add Class Css</button>
+        <button id="btnRemove">Remove Class Css</button>
+        <button id="btnToggle">Toggle Class Css</button>
+        <button id="btnCss">Css</button>
+
+
+

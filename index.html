@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso de JQuery</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  </head>
+  <body>
+
+    <div id="cuadrado"></div>
+
+    <button>Obetener Datos</button>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery_script_curso.js"></script>
+    <script>
+      $.when( $.ready, $.getScript("js/jquery_script_curso.js")). then(function(){
+        //codigo a ejecutar
+        alert("Se esta ejecutando bien")
+      }).catch(function(){
+        //codigo de error
+        alert("el script mando un error")
+      }) // pregunto si esta listo y funciona cuando el servidor esta andando
+      </script>
+  </body>
+</html>
